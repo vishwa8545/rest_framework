@@ -24,7 +24,7 @@ class  IndexView(View):
                 return redirect('index.html')
 
 
-        elif op_type == request.POST["vechical"]:
+        elif op_type == "vechical":
             if request.is_ajax():
                 print("ajax")
             form = VechicalForm(request.POST)
@@ -33,7 +33,7 @@ class  IndexView(View):
                 return redirect('index.html')
 
 
-        elif op_type ==request.POST["v_prob"]:
+        elif op_type == "v_prob":
             if request.is_ajax():
                 print("ajax")
             form = VechicalProForm(request.POST)

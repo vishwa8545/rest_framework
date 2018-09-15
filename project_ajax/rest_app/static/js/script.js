@@ -14,7 +14,7 @@
       url:urlEndpoint,
       method:httpMethod,
       data:formData,
-      sucess: function(data){
+      success: function(data){
         console.log("sucess");
         console.log(formData);
         refresher()
@@ -29,14 +29,14 @@
     function refresher() {
 
       var tableRefresh = $('.form-refresh')
-      var url  = '/vehical/user/';
+      var url  = '/vechical/user/';
       var httpMethod = "GET";
       var data ={};
       $.ajax({
-        url:urls,
+        url:url,
         method:httpMethod,
         data:data,
-        sucess: function(data){
+        success: function(data){
         console.log("sucess");
         },
         error: function(errordata){
@@ -83,7 +83,7 @@ $(document).ready(function(){
    function refresher() {
 
      var tableRefresh = $('.form-refresh')
-     var url  = '/vehical/user/';
+     var url  = '/vechical/user/';
      var httpMethod = "GET";
      var data ={};
      $.ajax({
@@ -136,11 +136,11 @@ $(document).ready(function(){
    function refresher() {
 
      var tableRefresh = $('.form-refresh')
-     var url  = '/vehical/user/';
+     var url  = '/vechical/user/';
      var httpMethod = "GET";
      var data ={};
      $.ajax({
-       url:urls,
+       url:url,
        method:httpMethod,
        data:data,
        sucess: function(data){
